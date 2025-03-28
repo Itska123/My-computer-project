@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.UserProfile">
+
+    <TextView
+        android:id="@+id/tvProfileName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="43dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="123dp"
+        android:ems="10"
+        android:gravity="right"
+        android:inputType="text"
+        android:text="Name"
+        app:layout_constraintBottom_toTopOf="@+id/btncamera"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgvforprofile"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ListView
+        android:id="@+id/lvProfile"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnChangeHistoryFuture" />
+
+    <Button
+        android:id="@+id/btnChangeHistoryFuture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="35dp"
+        android:text="Button"
+        app:layout_constraintBottom_toTopOf="@+id/lvProfile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btngallery" />
+
+    <ImageView
+        android:id="@+id/imgvforprofile"
+        android:layout_width="0dp"
+        android:layout_height="142dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="37dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/btncamera"
+        app:layout_constraintEnd_toStartOf="@+id/tvProfileName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/profile" />
+
+    <Button
+        android:id="@+id/btncamera"
+        style="@style/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Camera"
+        app:layout_constraintBottom_toTopOf="@+id/btngallery"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvProfileName" />
+
+    <Button
+        android:id="@+id/btngallery"
+        style="@style/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="19dp"
+        android:text="Gallery"
+        app:layout_constraintBottom_toTopOf="@+id/btnChangeHistoryFuture"
+        app:layout_constraintEnd_toEndOf="@+id/btncamera"
+        app:layout_constraintTop_toBottomOf="@+id/btncamera" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

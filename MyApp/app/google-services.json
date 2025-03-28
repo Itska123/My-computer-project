@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "710611825354",
+    "firebase_url": "https://textmaster-123-default-rtdb.firebaseio.com",
+    "project_id": "textmaster-123",
+    "storage_bucket": "textmaster-123.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:710611825354:android:919910811572a4a2c7ba33",
+        "android_client_info": {
+          "package_name": "com.Itska.TextMaster"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "710611825354-f3ccd10jiuo0u0tfb5au38bhj951g7rp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAa-HsO2oN-dKKgrd6zxF9LNf_PW8Y8GWM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "710611825354-f3ccd10jiuo0u0tfb5au38bhj951g7rp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:710611825354:android:79246ebed7a8b8e8c7ba33",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "710611825354-f3ccd10jiuo0u0tfb5au38bhj951g7rp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAa-HsO2oN-dKKgrd6zxF9LNf_PW8Y8GWM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "710611825354-f3ccd10jiuo0u0tfb5au38bhj951g7rp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

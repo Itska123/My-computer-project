@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    tools:context=".ui.About">
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/imgAbout"
+            style="@style/logo"
+            android:layout_width="102dp"
+            android:layout_height="146dp"
+            android:background="#A49E96"
+            android:scaleType="fitStart"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.81"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.088"
+            app:srcCompat="@drawable/lolbg" />
+
+        <TextView
+            android:id="@+id/tv"
+            style="@style/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="170dp"
+            android:layout_marginTop="73dp"
+            android:text="אודות"
+            app:layout_constraintBottom_toTopOf="@+id/etNameEntrance"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="158dp" />
+
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tv2About"
+        android:layout_width="0dp"
+        android:layout_height="185dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="201dp"
+        android:layout_marginEnd="12dp"
+        android:text="האפליקציה הזאת היא אפליקצית תורים לספר בה תוכלו לקבוע תור ולבטל אותו בנוחות מהבית. האפליקציה תעזור לספר לסדר את לוח הזמנים שלו ולמנוע מלקוחות לחכות שעות לתורם. מטרת האפליקציה היא להוסיף סדר ואירגון גם לחיי הספר וגם ללקוחות"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

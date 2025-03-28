@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/treatment_list"
+        android:title="רשימת טיפולים"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/users_list"
+        android:title="רשימת משתמשים"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/manager_calender"
+        android:title="יומן עבודה"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/manager_main"
+        android:title="מסך ראשי"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/manager_exit"
+        android:title="יציאה"
+        app:showAsAction="never" />
+</menu>

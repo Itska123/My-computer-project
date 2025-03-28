@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <!--שימו לב שיש לכם את כל ההרשאות-->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_REMOTE_MESSAGING" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApplication"
+        tools:targetApi="31">
+        <service
+            android:name=".moodle.FireBaseNotification"
+            android:enabled="true"
+            android:foregroundServiceType="remoteMessaging"
+            android:exported="true"
+            tools:ignore="ForegroundServicePermission"></service>
+        <activity
+            android:name=".ui.ManagerCalender"
+            android:exported="false" />
+        <activity
+            android:name=".ui.UserProfile"
+            android:exported="false" />
+        <activity
+            android:name=".ui.ManagerAddTreatment"
+            android:exported="false" />
+        <activity
+            android:name=".ui.ManagerUserLists"
+            android:exported="false" />
+        <activity
+            android:name=".ui.UserChooseTreatments"
+            android:exported="false" />
+        <activity
+            android:name=".ui.ManagerMain"
+            android:exported="false"
+            android:theme="@style/Theme.MyApplication" />
+        <activity
+            android:name=".ui.UserPickDate"
+            android:exported="false" />
+        <activity
+            android:name=".ui.About"
+            android:exported="false" />
+        <activity
+            android:name=".ui.SignIn"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Register"
+            android:exported="false"
+            android:theme="@style/Theme.MyApplication" />
+        <activity
+            android:name=".ui.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <provider android:authorities="com.example.myapplication.fileProvider" android:name="androidx.core.content.FileProvider" android:exported="false" android:grantUriPermissions="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_paths"> </meta-data>
+        </provider>
+    </application>
+
+</manifest>
